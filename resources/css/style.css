@@ -1,0 +1,194 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+/*Styling for desktop screen */
+.site-container {
+  max-width: 960px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center
+}
+.header-top-bar {
+  background-color: black;
+  font-size: 1rem;
+  color: white;
+}
+
+.header-text img {
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+.header-text span {
+  margin-top: 0.66rem;
+  margin-bottom: 0.66rem;
+}
+
+.header-banner {
+  height: 25rem;
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title_box {
+  margin-top: 9rem;
+  padding: 2rem 3rem;
+  width: 20rem;
+  background-color: black;
+  color: white;
+}
+
+#title-box-new {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+
+}
+#title-box-header {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header-navigation {
+  width: 100%;
+  background-color: firebrick;
+  padding: 0.75rem 0;
+  color: white;
+}
+.header-navigation  ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Removing the table navigation menu from the desktop version  */
+.tablet-navigation {
+  display: none;
+}
+
+main {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.content-image-container {
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container {
+  width: 30%;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+}
+
+.image-container img {
+  padding: 2rem 0;
+  height: 9rem;
+  max-width: 100%;
+}
+
+.image-container span {
+  display: block;
+  padding: 0.5rem 0;
+  background-color: black;
+}
+
+.geo-time-container {
+  display: flex;
+  justify-content: space-between;
+}
+.geo-time-content {
+  width: 35%;
+}
+.geo-time-content span {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+.geo-time-content p {
+  padding-top: 0.5rem;
+}
+
+footer {
+  background-color: black;
+  height: 5rem;
+
+  color: white;
+}
+
+/* End Styling for Desktop Screen */
+
+/* Styling for Tablet Screen  */
+@media only screen and (max-width:1024px) {
+.desktop-navigation {
+  display: none;
+}
+
+.tablet-navigation{
+  display: block;
+}
+
+.content-image-container {
+    flex-flow: wrap;
+}
+
+.image-container {
+  width: 47%;
+  margin: 1rem 0;
+}
+
+}
+
+/* End Styling for Tablet Screen  */
+
+/* Styling for Mobile Screen */
+@media only screen and (max-width:470px) {
+  .header-banner {
+    height: 15rem;
+  }
+
+  .title_box {
+    margin-top: 10rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+
+  #title-box-new {
+    font-size: 0.77rem;
+
+  }
+  #title-box-header {
+    font-size: 0.77rem;
+  }
+
+  .content-image-container {
+    display: flex;
+    justify-content: center;
+  }
+  .image-container {
+    width: 90%;
+  }
+  .geo-time-container {
+    display: flex;
+    flex-flow: column;
+
+  }
+  .geo-time-content {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* End Styling for Mobile Screen */

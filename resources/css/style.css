@@ -9,7 +9,7 @@ html {
   margin: auto;
   height: 100%;
   display: flex;
-  align-items: center
+  align-items: center;
 }
 .header-top-bar {
   background-color: black;
@@ -128,7 +128,7 @@ footer {
 /* End Styling for Desktop Screen */
 
 /* Styling for Tablet Screen  */
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1024px) and (min-width:471px) {
 .desktop-navigation {
   display: none;
 }
@@ -144,6 +144,10 @@ footer {
 .image-container {
   width: 47%;
   margin: 1rem 0;
+}
+
+#glasses {
+  display: none;
 }
 
 }
@@ -189,6 +193,10 @@ footer {
   footer {
     display: flex;
     justify-content: center;
+  }
+
+  #watch, #glasses, .desktop-navigation, tablet-navigation {
+    display: none;
   }
 }
 /* End Styling for Mobile Screen */
